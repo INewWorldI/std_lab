@@ -1,0 +1,9 @@
+spring:
+  datasource: # 데이터베이스 설정
+    driver-class-name: org.mariadb.jdbc.Driver # 데이터베이스 드라이버
+    url: jdbc:mariadb://localhost/std_lab_week1?characterEncoding=UTF-8&serverTimezone=UTC # 데이터베이스 연결 주소
+    username: root # 데이터베이스 계정 아이디
+    password: newworld1107 # 데이터베이스 계정 비밀번호
+  jpa: # spring jpa 설정
+    hibernate:
+      ddl-auto: update # 테이블 자동 생성 여부 해당 옵션은 데이터를 날릴 수 있기 때문에 프로덕트같은 실제 환경에서는 조심해서 사용해야 한다.
