@@ -2,7 +2,6 @@ package nworld.dev.std_lab_week1.service;
 
 import nworld.dev.std_lab_week1.entity.Freeboard;
 import nworld.dev.std_lab_week1.repository.FreeboardRepository;
-import org.hibernate.validator.internal.util.privilegedactions.NewProxyInstance;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

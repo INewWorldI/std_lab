@@ -42,6 +42,11 @@ public class FreeboardController {
         return ResponseEntity.ok(findBoard);
     }
 
+    @GetMapping
+    public ResponseEntity<?> getAllBoard(@PathVariable Long page) {
+        return ResponseEntity.ok().build();
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteBoard(@PathVariable Long id) {
         freeboardService.removeFreeboard(id);
